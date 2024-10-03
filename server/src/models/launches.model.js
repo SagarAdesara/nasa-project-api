@@ -53,14 +53,7 @@ async function populateLaunches() {
       customers,
     };
 
-    console.log(
-      `${launch.flightNumber} ${launch.mission} ${JSON.stringify(
-        launch.customers
-      )}`
-    );
-
     saveLaunch(launch);
-    //TODO: Populate launches
   }
 }
 

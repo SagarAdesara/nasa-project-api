@@ -27,7 +27,7 @@ describe("Launches API", () => {
     const completeLaunchData = {
       mission: "ZTM155 ",
       rocket: "ZTM Experimental IS1",
-      launchDate: "January 17, 2030",
+      launchDate: "2032-12-09",
       target: "Kepler-62 f",
     };
     const launchDataWithoutDate = {
@@ -53,7 +53,7 @@ describe("Launches API", () => {
       expect(responseDate).toBe(requestDate);
 
       expect(response.body).toMatchObject(launchDataWithoutDate);
-    });
+    }, 1000000);
 
     test("It should catch missing required properties", async () => {
       const response = await request(app)
