@@ -6,7 +6,7 @@
     "watch": "nodemon src/server.js",
     "test": "jest --detectOpenHandles",
     "test-watch": "jest --watchAll",
-    "start": "PORT=8000 node src/server.js",
+    "start": "node src/server.js",
     "cluster": "pm2 start src/server.js -i max"
   },
   "keywords": [],
